@@ -19,6 +19,4 @@ class Customer
   def new_meal(name, age, tip)
     Meal
   end 
-
-
 end
