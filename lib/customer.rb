@@ -14,6 +14,11 @@ class Customer
 
   def meals
     meals.all.select { |meal| meal.customer == self}
+  end
+
+  def waiters
+    meals.map do { |meal| meal.waiter}
+    end
   end 
 
   def new_meal(name, age, tip)
