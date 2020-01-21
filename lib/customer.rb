@@ -10,7 +10,14 @@ class Customer
 
   def self.all
     @@all
-  end 
+  end
+
+  def meals
+    meals.map do {|meal| meal.waiter}
+  end
+
+  def new_meal(name, age, tip)
+    Meal
 
 
 end
