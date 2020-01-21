@@ -13,11 +13,9 @@ class Customer
   end
 
   def meals
-    meals.map do |meal|
-      meal.waiter
-    end
-  end
-  
+    meals.all.select { |meal| meal.customer == self}
+  end 
+
   def new_meal(name, age, tip)
     Meal
   end
