@@ -15,8 +15,8 @@ class Customer
   def meals
     meals.map do |meal|
       meal.waiter
-    end 
-  end 
+    end
+  end
   
   def new_meal(name, age, tip)
     Meal
